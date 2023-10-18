@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(175, 176, 174);
+}
+
+body{
+    background-image: url(kleding.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li{
+    margin: 5%;
+}
+
+nav li:active{
+    border: 5%;
+    border-style: dashed;
+    border-color: white;
+}
+
+nav img{
+    border: 10%;
+    width: 130px;
+    height: 80px;
+}
+.knop{
+    background-color: aquamarine;
+}
+
+.knop:hover{
+    color: black;
+ background-color: aquamarine;
+}
+
+.knop:active{
+background-color: rgb(85, 210, 168);
+transform: translateY(2%);
+}
+
+.knop:focus{
+    border-color: rgb(85, 210, 168);
+}
+
+.groen img{
+transition: transform 0,3s;
+max-width: 100%;
+max-height: 50%;
+border: 1em;
+border-color: blanchedalmond;
+}
+
+.groen img:hover{
+    transform: scale(1.01); translate: 0,3px;
+    opacity: 0,9;
+}
+
