@@ -3,14 +3,16 @@
 }
 
 body{
-    background-color: rgb(175, 176, 174);
+    background-color:#A6D0E0
 }
 
-body{
-    background-image: url(kleding.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%
+.logo{
+ display: flex;
+justify-content: center;
+align-items: center;
+ max-height: fit-content;
 }
+
 
 nav ul{
     display: flex;
@@ -34,6 +36,8 @@ nav img{
     width: 130px;
     height: 80px;
 }
+
+-------------------------------
 .knop{
     background-color: aquamarine;
 }
