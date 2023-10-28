@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    align-items: center;
+    padding: 5%;
+}
 body{
     background-color:#A6D0E0
 }
@@ -13,7 +22,9 @@ align-items: center;
  max-height: fit-content;
 }
 
-
+.vintage{
+    background-color: #97bbd3;
+}
 nav ul{
     display: flex;
     justify-content: space-around;
