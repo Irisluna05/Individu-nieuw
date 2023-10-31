@@ -6,13 +6,18 @@ h1,h2,h3,h4,h5{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'bodoni 72 smallcaps';
 }
 p{
     align-items: center;
     padding: 5%;
+    font-family: 'avenir next';
 }
 body{
-    background-color:#A6D0E0
+    background-color:#C1DFE0 
+}
+li{
+    font-family:'avenir next';
 }
 
 .logo{
@@ -23,17 +28,23 @@ align-items: center;
 }
 
 .vintage{
-    background-color: #97bbd3;
+    padding: 2%;
+    border-radius: 5%;
+    background-color: #F5F2E3 
+    
 }
+
+
 nav ul{
     display: flex;
     justify-content: space-around;
     justify-content: center;
     list-style: none;
+    size: 50%;
 }
 
 nav li{
-    margin: 5%;
+    margin: 4%;
 }
 
 nav li:active{
@@ -43,8 +54,8 @@ nav li:active{
 }
 
 nav img{
-    border: 10%;
-    width: 130px;
+    border: 2%;
+    width: 100px;
     height: 80px;
 }
 
