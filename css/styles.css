@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
 }
 
 h1,h2,h3,h4,h5{
@@ -8,13 +10,22 @@ h1,h2,h3,h4,h5{
     align-items: center;
     font-family: 'bodoni 72 smallcaps';
 }
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:active{
+    color: #4F6B53;
+}
 p{
     align-items: center;
     padding: 5%;
     font-family: 'avenir next';
 }
 body{
-    background-color:#C1DFE0 
+    background-color: #C0DFE0
 }
 li{
     font-family:'avenir next';
@@ -25,22 +36,44 @@ li{
 justify-content: center;
 align-items: center;
  max-height: fit-content;
+ flex-wrap: wrap;
 }
+
+.navigatie{
+    padding-bottom: 5%;
+    animation-duration: 3s;
+    animation-name: bounce;
+}
+
+@keyframes bounce{
+0%{ transform: translateY(0);}
+
+50%{ transform: translateY(-15px);}
+
+70%{ transform: translateY(15px);}
+
+100%{transform: translateY(0);}
+}
+
+
+
 
 .vintage{
     padding: 2%;
     border-radius: 5%;
-    background-color: #F5F2E3 
+    background-color: #A5BCA1
     
 }
 
-
+video{
+    padding: 5%;
+}
 nav ul{
     display: flex;
     justify-content: space-around;
     justify-content: center;
     list-style: none;
-    size: 50%;
+    background-color: #D1E6CC
 }
 
 nav li{
@@ -48,46 +81,27 @@ nav li{
 }
 
 nav li:active{
-    border: 5%;
+    border: 0.2em;
     border-style: dashed;
     border-color: white;
 }
 
 nav img{
-    border: 2%;
     width: 100px;
     height: 80px;
 }
 
--------------------------------
-.knop{
-    background-color: aquamarine;
+.imgslider{
+    display: flex;
+    align-items: center;
+  position: relative;
+  padding: 5%;
+  
 }
 
-.knop:hover{
-    color: black;
- background-color: aquamarine;
+footer{
+    background-color:#A5BCA1
 }
 
-.knop:active{
-background-color: rgb(85, 210, 168);
-transform: translateY(2%);
-}
 
-.knop:focus{
-    border-color: rgb(85, 210, 168);
-}
-
-.groen img{
-transition: transform 0,3s;
-max-width: 100%;
-max-height: 50%;
-border: 1em;
-border-color: blanchedalmond;
-}
-
-.groen img:hover{
-    transform: scale(1.01); translate: 0,3px;
-    opacity: 0,9;
-}
 
