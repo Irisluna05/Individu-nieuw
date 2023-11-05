@@ -8,7 +8,7 @@ h1,h2,h3,h4,h5{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'bodoni 72 smallcaps';
+    font-family: 'bodoni 72 smallcaps', 'Arial bold';
 }
 
 a{
@@ -19,6 +19,11 @@ a{
 a:active{
     color: #4F6B53;
 }
+
+a:after{
+    color: #4F6B53;
+}
+
 p{
     align-items: center;
     padding: 5%;
@@ -27,9 +32,14 @@ p{
 body{
     background-color: #C0DFE0
 }
+
 li{
-    font-family:'avenir next';
+    font-family:'avenir next', sans-serif;
 }
+
+figcaption{ 
+    font-family: 'avenir next', sans-serif;
+font-size: small;}
 
 .logo{
  display: flex;
@@ -41,33 +51,20 @@ align-items: center;
 
 .navigatie{
     padding-bottom: 5%;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     animation-name: bounce;
 }
 
 @keyframes bounce{
 0%{ transform: translateY(0);}
 
-50%{ transform: translateY(-15px);}
+50%{ transform: translateY(-10px);}
 
-70%{ transform: translateY(15px);}
+70%{ transform: translateY(10px);}
 
 100%{transform: translateY(0);}
 }
 
-
-
-
-.vintage{
-    padding: 2%;
-    border-radius: 5%;
-    background-color: #A5BCA1
-    
-}
-
-video{
-    padding: 5%;
-}
 nav ul{
     display: flex;
     justify-content: space-around;
@@ -91,17 +88,88 @@ nav img{
     height: 80px;
 }
 
-.imgslider{
+/* Hiermee komt er een border om het kledingstuk van verhaal */
+.optie1{
+    border-color: #4F6B53;
+    border-style: solid;
+    padding: 7%;
+}
+
+
+.etalage{
     display: flex;
+    justify-content: center;
     align-items: center;
-  position: relative;
-  padding: 5%;
+    object-fit: cover;
+    border:#6AABBA;
+    border-style: solid;
+    padding-top: 2%;
   
+}
+
+.vintage{
+    padding: 2%;
+    border-radius: 5%;
+    background-color: #A5BCA1
+    
+}
+
+video{
+    padding: 5%;
+}
+
+
+.media-scroller {
+  display: grid;
+  gap:20%;
+  grid-auto-flow: column;
+  grid-auto-columns: 40%;
+  padding: 0 var(--_spacer) var(--_spacer);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+ margin: 5%;
+}
+
+.media-scroller--with-groups {
+  grid-auto-columns: 80%;
+}
+
+.media-group {
+  display: grid;
+  row-gap: 20%;
+  grid-auto-flow: column;
+}
+
+.media-element > img {
+  inline-size: 100%;
+  object-fit: cover;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+.flow {
+  display: grid;
+  gap: var(--size-3);
+}
+
+.section-title {
+  padding-inline-start: var(--size-6);
+  margin-block: var(--size-9) var(--size-3);
 }
 
 footer{
     background-color:#A5BCA1
 }
 
-
-
+.icoon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
