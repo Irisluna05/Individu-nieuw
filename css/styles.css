@@ -105,8 +105,11 @@ nav img{
     border:#6AABBA;
     border-style: solid;
     padding-top: 2%;
-  
 }
+
+/* Dit vergroot de foto als je erop klikt.*/
+.etalage img:active{
+   transform: scale(1.05);}
 
 .vintage{
     padding-top: 2%;
@@ -117,6 +120,8 @@ nav img{
 
 video{
     padding: 5%;
+    margin-left: 3%;
+    background-color: #DBDBAD;
 }
 
 
@@ -131,6 +136,7 @@ video{
  margin: 5%;
 }
 
+
 .media-scroller{
     animation-duration: 7.5s;
     animation-name: slide;
@@ -142,11 +148,11 @@ video{
 
     30%{ transform: translateX(30px);}
     
-    50%{ transform: translateX(10px)}
+    50%{ transform: translateX(20px)}
     
-    60%{ transform: translateX(-30px);}
+    60%{ transform: translateX(10px);}
 
-    80%{ transform: translateX(30px);}
+    80%{ transform: translateX(-10px);}
 
     90%{transform: translateX(10px);}
     
@@ -167,6 +173,11 @@ video{
 .media-element > img {
   inline-size: 100%;
   object-fit: cover;
+}
+
+/* Dit vergroot de foto als je erop klikt.*/
+.media-element > img:focus{
+    transform-origin: 30%;
 }
 
 .snaps-inline {
