@@ -45,6 +45,7 @@ font-size: small;}
  display: flex;
 justify-content: center;
 align-items: center;
+margin-left: 7%;
  max-height: fit-content;
  flex-wrap: wrap;
 }
@@ -89,14 +90,18 @@ nav img{
     height: 80px;
 }
 
-/* Hiermee komt er een border om het kledingstuk van verhaal */
+/* Deze divs zijn gebruikt zodat de navigatie items groter worden bij de pagina waar ze bij passen.*/
 .optie1{
-    border-color: #4F6B53;
-    border-style: solid;
-    padding: 7%;
+    transform: scale(1.15);
 }
 
+.optie2{
+    transform: scale(1.15);
+}
 
+.optie3{
+    transform: scale(1.15);
+}
 .etalage{
     display: flex;
     justify-content: center;
