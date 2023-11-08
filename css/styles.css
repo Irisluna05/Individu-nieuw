@@ -92,7 +92,6 @@ nav li:active{
 .optie1{
     transform: scale(1.15)
 }
-
 .optie2{
     transform: scale(1.15);
 }
@@ -105,9 +104,6 @@ nav img{
     width: 90px;
     height: 80px;
 }
-
-
-
 
 .etalage{
     display: flex;
@@ -130,18 +126,34 @@ nav img{
 }
 
 video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    margin-left: 3%;
+    display: block;
+    margin:0 auto;
     background-color: #DBDBAD;
 }
 
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
 
+.green{
+    display: flex;
+    justify-content: right;
+    padding: 2%;
+}
+
+.indeling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Met deze code heb ik de slider op de assortiment pagina gemaakt.*/
 .media-scroller {
   display: grid;
-  gap:20%;
+  gap:15%;
   grid-auto-flow: column;
   grid-auto-columns: 40%;
   padding: 0 var(--_spacer) var(--_spacer);
@@ -150,11 +162,6 @@ video{
  margin: 5%;
 }
 
-.green{
-    display: flex;
-    justify-content: right;
-    padding: 2%;
-}
 .media-scroller{
     animation-duration: 7.5s;
     animation-name: slide;
@@ -184,7 +191,7 @@ video{
 
 .media-group {
   display: grid;
-  row-gap: 20%;
+  row-gap: 10%;
   grid-auto-flow: column;
 }
 
@@ -193,11 +200,7 @@ video{
   object-fit: cover;
 }
 
-/* Dit vergroot de foto als je erop klikt.*/
-.media-element > img:focus{
-    transform-origin: 30%;
-}
-
+/* Hiermee begint de scroller bij de eerste afbeelding.*/
 .snaps-inline {
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: var(--_spacer, 1rem);
@@ -205,11 +208,6 @@ video{
 
 .snaps-inline > * {
   scroll-snap-align: start;
-}
-
-.flow {
-  display: grid;
-  gap: var(--size-3);
 }
 
 .section-title {
@@ -221,6 +219,7 @@ footer{
     background-color:#A5BCA1
 }
 
+/* Dit is het locatie icoon*/
 .icoon{
     display: flex;
     align-items: center;
