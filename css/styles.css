@@ -41,6 +41,7 @@ figcaption{
     font-family: 'avenir next', sans-serif;
 font-size: small;}
 
+
 .logo{
  display: flex;
 justify-content: center;
@@ -76,32 +77,38 @@ nav ul{
 }
 
 nav li{
-    margin: 4%;
+    margin: 5%;
 }
 
+/* Hiermee worden de navigatie items groter als je ze aanklikt.*/
 nav li:active{
     border: 0.2em;
     border-style: dashed;
     border-color: white;
-}
-
-nav img{
-    width: 100px;
-    height: 80px;
+    margin: 5%;
 }
 
 /* Deze divs zijn gebruikt zodat de navigatie items groter worden bij de pagina waar ze bij passen.*/
 .optie1{
-    transform: scale(1.15);
+    transform: scale(1.15)
 }
 
 .optie2{
     transform: scale(1.15);
 }
-
 .optie3{
     transform: scale(1.15);
 }
+
+
+nav img{
+    width: 90px;
+    height: 80px;
+}
+
+
+
+
 .etalage{
     display: flex;
     justify-content: center;
@@ -116,14 +123,16 @@ nav img{
 .etalage img:active{
    transform: scale(1.05);}
 
-.vintage{
+.fashion{
     padding-top: 2%;
     margin-bottom: 10%;
-    border-radius: 5%;
     background-color: #A5BCA1
 }
 
 video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5%;
     margin-left: 3%;
     background-color: #DBDBAD;
@@ -141,7 +150,11 @@ video{
  margin: 5%;
 }
 
-
+.green{
+    display: flex;
+    justify-content: right;
+    padding: 2%;
+}
 .media-scroller{
     animation-duration: 7.5s;
     animation-name: slide;
