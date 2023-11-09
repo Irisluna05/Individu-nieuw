@@ -91,7 +91,7 @@ nav li:active{
     margin: 5%;
 }
 
-/* Deze divs zijn gebruikt zodat de navigatie items groter worden bij de pagina waar ze bij passen.*/
+/* Deze classes zijn gebruikt zodat de navigatie items groter worden bij de pagina waar ze bij passen.*/
 .optie1{
     transform: scale(1.15)
 }
@@ -113,13 +113,10 @@ nav img{
 }
 
 .etalage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
     border:#6AABBA;
+    margin: 5%;
+    padding: 5%;
     border-style: solid;
-    padding-top: 2%;
 }
 
 /* Dit vergroot de foto als je erop klikt.*/
