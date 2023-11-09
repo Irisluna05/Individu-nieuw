@@ -11,8 +11,9 @@ h1,h2,h3,h4,h5{
     font-family: 'bodoni 72 smallcaps', 'Arial bold';
 }
 
+
 a{
-    color: white;
+    color:  #4a595a;
     text-decoration: none;
 }
 
@@ -20,15 +21,13 @@ a:active{
     color: #4F6B53;
 }
 
-a:after{
-    color: #4F6B53;
-}
 
 p{
     align-items: center;
     padding: 5%;
     font-family: 'avenir next';
 }
+
 body{
     background-color: #C0DFE0
 }
@@ -41,6 +40,10 @@ figcaption{
     font-family: 'avenir next', sans-serif;
 font-size: small;}
 
+.border{
+    border-color: #A5BCA1;
+    border-style: double;
+}
 
 .logo{
  display: flex;
@@ -99,10 +102,14 @@ nav li:active{
     transform: scale(1.15);
 }
 
-
 nav img{
     width: 90px;
     height: 80px;
+}
+
+
+.ass{
+    background-color: #6AABBA;
 }
 
 .etalage{
@@ -122,20 +129,37 @@ nav img{
 .fashion{
     padding-top: 2%;
     margin-bottom: 10%;
-    background-color: #A5BCA1
+    background-color: #A5BCA1;
+}
+
+.fashion h2{
+    color: #4a595a;
+}
+.fashion p{
+    color: #4a595a;
+}
+
+/* Op de duurzaamheid pagina is er nog een extra dotted border op de video.*/
+.borderv{
+    border: #4F6B53;
+    border-style: dotted;
 }
 
 video{
     display: block;
-    margin:0 auto;
+    margin: auto;
+    padding: 5%;
     background-color: #DBDBAD;
 }
+
 
 figure{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 2%;
+    border: transparent;
+    border-radius: 50%;
 }
 
 .green{
@@ -144,6 +168,24 @@ figure{
     padding: 2%;
 }
 
+.green image{
+    width: 20%;
+    height: 10%;
+}
+
+.kader{
+    display: flex;
+    justify-content: left;
+    background-color: #C0DFE0;
+    padding: 5%;
+}
+
+.kader2{
+    display: flex;
+    justify-content: right;
+    background-color: #C0DFE0;
+    padding: 5%;
+}
 .indeling{
     display: flex;
     justify-content: center;
@@ -216,7 +258,11 @@ figure{
 }
 
 footer{
+    position: absolute;
+   width: 100%;
+   margin-top: 10%;
     background-color:#A5BCA1
+    
 }
 
 /* Dit is het locatie icoon*/
